@@ -8,4 +8,4 @@ if (numero >= 0 && numero <= 5){
     console.log('O número está entre 9 e 11.')
 } else {
     console.log('O número não está entre 0 e 11.')
-} 
+}  
