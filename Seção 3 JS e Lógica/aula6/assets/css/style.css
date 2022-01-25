@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
 :root {
   --primary-color: rgb(17, 86, 102);
   --primary-color-darker: rgb(9, 48, 56);
@@ -62,11 +61,18 @@ form button:hover {
 
 /* Modelo */
 
-.tabela {
+#tabela {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-p {
-  margin: 0.5rem;
+.paragrafo-resultado,
+.bad {
+  background: rgb(109, 255, 182);
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.bad {
+  background: rgb(255, 150, 150);
 }
