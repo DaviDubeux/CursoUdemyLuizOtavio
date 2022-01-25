@@ -8,7 +8,7 @@ function meuEscopo() {
 
     const imc = peso / altura ** 2;
 
-    console.log(imc, peso, altura);
+    console.log(altura);
 
     alert(`Seu IMC é de ${imc}`);
   }
