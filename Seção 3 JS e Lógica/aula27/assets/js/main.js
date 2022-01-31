@@ -1,7 +1,3 @@
-// Fazer um timer
-// Atribuir o valor do timer pro relogio
-// Definir pra quando o relogio estiver pausado, ficar vermelho
-
 const relogio = document.querySelector(".relogio");
 const iniciar = document.querySelector(".iniciar");
 const pausar = document.querySelector(".pausar");
@@ -16,6 +12,7 @@ var inicio;
 var fim;
 
 iniciar.addEventListener("click", () => {
+  clearInterval(timer);
   inicio = Date.now();
   relogio.style.color = "black";
   timer = setInterval(() => {
