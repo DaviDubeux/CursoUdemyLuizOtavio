@@ -3,7 +3,7 @@ function criaCalculadora() {
     display: document.querySelector(".display"),
 
     inicia() {
-      this.cliqueBototes();
+      this.cliqueBotoes();
       this.pressionaEnter();
     },
 
@@ -41,7 +41,7 @@ function criaCalculadora() {
       this.display.value = this.display.value.slice(0, -1);
     },
 
-    cliqueBototes() {
+    cliqueBotoes() {
       document.addEventListener("click", (e) => {
         const el = e.target;
 
@@ -65,6 +65,7 @@ function criaCalculadora() {
 
     btnParaDisplay(valor) {
       this.display.value += valor;
+      this.display.focus();
     },
   };
 }
