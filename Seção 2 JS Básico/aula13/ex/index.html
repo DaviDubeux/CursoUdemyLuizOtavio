@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const name = prompt('Digite seu nome completo: ');
+        document.body.innerHTML += `Seu nome é: <strong>${name}<strong/> <br />`;
+        document.body.innerHTML += `Seu nome tem <strong>${name.replace(/ /g, '').length}<strong/> letras <br />`;
+        document.body.innerHTML += `A segunda letra do seu nome é: <strong>${name[1]}<strong/> <br />`;
+        document.body.innerHTML += `Qual o primeiro índice da letra a no seu nome? <strong>${name.indexOf('a')}<strong/> <br />`;
+        document.body.innerHTML += `Qual o último índice da letra a no seu nome? <strong>${name.lastIndexOf('a')}<strong/> <br />`;
+        document.body.innerHTML += `As últimas 3 letras do seu nome são: <strong>${name.slice(13)}<strong/> <br />`;
+        document.body.innerHTML += `As palavras do seu nome são: <strong>${name.split(' ')}<strong/> <br />`;
+        document.body.innerHTML += `Seu nome com letras maiúsculas: <strong>${name.toUpperCase()}<strong/> <br />`;
+        document.body.innerHTML += `Seu nome com letras minúsculas: <strong>${name.toLowerCase()}<strong/> <br />`;
+    </script>
+</body>
+</html>
